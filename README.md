@@ -11,6 +11,8 @@ Using [volta](https://volta.sh) to automatically fetch the correct node & npm ve
 
 ```bash
 $ npm install
+
+$ cp .env.example .env
 ```
 
 ## Running the app

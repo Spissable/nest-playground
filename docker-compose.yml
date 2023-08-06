@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/app/src
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@db:5432/nest-playground-db
+    depends_on:
+      - db
+    command: npm run start:debug
+  db:
+    image: postgres:15.3
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=nest-playground-db
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data_container:/var/lib/postgresql/data
+
+volumes:
+  postgres_data_container:
+
