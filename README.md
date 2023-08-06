@@ -9,15 +9,22 @@ This is my tiny little playground to try out some shiny new things and to reprod
 ## Installation
 Using [volta](https://volta.sh) to automatically fetch the correct node & npm version.
 
-```bash
-$ npm install
+```commandline
+npm install
 
-$ cp .env.example .env
+cp .env.example .env
 ```
 
 ## Running the app
 
-```bash
+Via Docker:
+
+```commandline
+docker compose up
+```
+
+or:
+```commandline
 # development
 $ npm run start
 
@@ -27,10 +34,10 @@ $ npm run start:watch
 
 ## Test
 
-```bash
+```commandline
 # unit tests
-$ npm run test
+npm run test
 
 # e2e tests
-$ npm run test:e2e
+npm run test:e2e
 ```
