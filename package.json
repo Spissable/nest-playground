@@ -29,7 +29,7 @@
     "@nestjs/core": "^10.2.7",
     "@nestjs/platform-fastify": "^10.2.7",
     "@nestjs/swagger": "^7.1.14",
-    "drizzle-orm": "^0.28.6",
+    "drizzle-orm": "^0.29.0",
     "pg": "^8.11.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
