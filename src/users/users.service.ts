@@ -20,6 +20,6 @@ export class UsersService {
       },
     });
 
-    return dbUsers.map(dbUser => new UsersResponseDto(dbUser));
+    return dbUsers.map((dbUser) => new UsersResponseDto(dbUser));
   }
 }
